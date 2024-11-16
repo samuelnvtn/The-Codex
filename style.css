@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: AC;
-  src: url();
+  src: url("/img/AC-Logo-Kit/Trajan\ Pro\ Regular.ttf");
 }
 
 #background-video {
@@ -27,7 +27,8 @@
   background-position: center top;
 }
 
-.container {
+.container,
+.container2 {
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -64,6 +65,35 @@ p {
 }
 
 .top-logo p {
+  font-family: AC;
   font-weight: bold;
   font-size: 25px;
+}
+
+.about {
+  margin-right: 40px;
+}
+
+.sound-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+#snd-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#snd-button:active {
+  cursor: default;
+}
+
+#mute-icon {
+  width: 32px;
+  height: 32px;
+  display: block;
 }

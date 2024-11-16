@@ -7,8 +7,11 @@
     <link
       rel="icon"
       type="image/png"
-      href="/img/AC Logo Kit/01_Crests/AbstergoEntertainment_Icon.png"
+      href="/img/AC-Logo-Kit/01_Crests/AbstergoEntertainment_Icon.png"
     />
+
+    <script src="main.js"></script>
+
     <title>The Codex</title>
   </head>
   <body>
@@ -33,20 +36,23 @@
             <p>The Codex</p>
           </div>
           <div class="top-right">
-            <a href="about.html">About</a>
+            <div class="about">
+              <a href="about.html">About</a>
+            </div>
+            <div class="sound-button">
+              <button id="snd-button">
+                <img src="/img/sound-off.png" id="mute-icon" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
-      <video
-        id="background-video"
-        autoplay
-        loop
-        muted
-        poster="https://assets.codepen.io/6093409/river.jpg"
-      >
+      <div class="container2"></div>
+      <video id="background-video" preload autoplay loop muted>
+        <!--when default unmuted, chrome policy freezes vid after reload of page-->
         <source src="/img/bgvid.mp4" type="video/mp4" />
       </video>
     </div>
-    <!-- <div class="section 2"><p>pp</p></div> -->
+    <div class="section 2"><p>pp</p></div>
   </body>
 </html>
