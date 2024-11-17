@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
   muteButton.addEventListener("click", () => {
     if (video.muted) {
       video.muted = false;
-      muteIcon.src = "/img/sound-on.png"; // Path to your "sound on" icon
+      muteIcon.src = "/img/sound-on.png";
       muteIcon.alt = "Sound On";
     } else {
       video.muted = true;
-      muteIcon.src = "/img/sound-off.png"; // Path to your "sound off" icon
+      muteIcon.src = "/img/sound-off.png";
       muteIcon.alt = "Sound Off";
     }
   });
