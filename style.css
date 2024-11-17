@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: AC;
-  src: url("/img/AC-Logo-Kit/Trajan\ Pro\ Regular.ttf");
+  src: url("/img/Trajan\ Pro\ Regular.ttf");
 }
 
 #background-video {
@@ -37,7 +37,7 @@
 .container2 {
   margin-top: 50px;
   width: 70%;
-  height: 100%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -107,15 +107,30 @@ p {
 }
 
 .games-grid {
+  margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  width: 100%;
+  /* background-color: rgba(255, 255, 255, 0.193); */
 }
 
 .games-grid > * {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   /* padding-top: 20px; */
   padding-bottom: 20px;
+}
+
+.games-grid img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  object-fit: contain;
+}
+
+.games-grid > *:hover {
+  height: 105%;
 }
