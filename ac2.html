@@ -10,12 +10,19 @@
       type="image/png"
       href="/img/logos/AbstergoEntertainment_Icon.png"
     />
+
+    <script src="main.js"></script>
   </head>
   <body>
     <div class="section">
+      <div class="container">
+        <button id="snd-button2">
+          <img src="/img/sound-off-black.png" id="mute2" />
+        </button>
+      </div>
       <video id="background-video" preload autoplay loop muted>
         <!--when default unmuted, chrome policy freezes vid after reload of page-->
-        <source src="/img/bg/ac2-bg.mp4" type="video/mp4" />
+        <source src="/img/bg/ac2bg.mp4" type="video/mp4" />
       </video>
     </div>
   </body>
