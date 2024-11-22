@@ -181,14 +181,14 @@ h3 {
   height: 65%;
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1000px) {
   .top-logo {
     display: flex;
     align-items: center;
   }
 
   .top-logo p {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   #mute-icon {
@@ -197,16 +197,31 @@ h3 {
   }
 
   .main {
+    font-size: 14px;
+  }
+  .link1,
+  .link2,
+  .about {
+    font-size: 14px;
+  }
+
+  .games-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width: 900px) {
+  .top-logo p {
+    font-size: 17px;
+  }
+
+  .main {
     font-size: 12px;
   }
   .link1,
   .link2,
   .about {
-    font-size: 10px;
-  }
-
-  .games-grid {
-    grid-template-columns: repeat(2, 1fr);
+    font-size: 12px;
   }
 }
 
